@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>entrega-1</title>
+  </head>
+  <body>
+    <header class="bgImgCenter" style="background: url(./media/tittle_cow.jpg)">
+      <h1>Cows</h1>
+      <nav>
+        <a href="link_1">Lorem ipsum</a>
+        <a href="link_2">Lorem ipsum</a>
+        <button name="Buy_top">Buy</button>
+      </nav>
+    </header>
+
+    <section id="article_1" style="background: orange">
+      <h1>Lorem ipsum</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th align="left">
+              <p id="paragraph_1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quaerat ab vitae ullam exercitationem inventore quos
+                odit minus magnam sint nisi nihil dolorum officia eligendi,
+                natus fugiat, quam itaque. Qui minima est velit perspiciatis
+                dolores adipisci maxime vel, incidunt natus.
+              </p>
+            </th>
+            <th rowspan="2" align="left">
+              <p id="paragraph_2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                laborum dolores nesciunt placeat tempore laudantium. Qui
+                doloribus, ipsum ut dolore iusto numquam minus sit atque. Ipsum
+                doloribus maxime assumenda, optio, eveniet quis aliquid vero
+                eum, libero consequatur ipsam aliquam. Facere autem laborum
+                quidem, dignissimos ut ipsa adipisci explicabo? Eligendi ea
+                veniam alias perferendis, rerum atque eos soluta sed est.
+                Repellat, nisi inventore. Quo, explicabo nemo quam vero
+                voluptatum quidem aut cupiditate quasi. Reprehenderit ex laborum
+                reiciendis nemo tenetur facilis omnis!
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <th align="left">
+              <p id="paragraph_3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti hic laborum sed voluptas esse illo pariatur blanditiis.
+                Laborum minus omnis eos.
+              </p>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav>
+        <table>
+          <thead>
+            <th>
+              <img
+                src="./media/cow_1.jpg"
+                alt="Cow_1"
+                width="300"
+                height="300"
+              />
+            </th>
+            <th>
+              <img
+                src="./media/cow_2.jpg"
+                alt="Cow_2"
+                width="300"
+                height="300"
+              />
+            </th>
+            <th>
+              <img
+                src="./media/cow_1.jpg"
+                alt="Cow_3"
+                width="300"
+                height="300"
+              />
+            </th>
+          </thead>
+
+          <tbody>
+            <tr align="center" style="background: black">
+              <td style="color: white;">
+                <h1>Cow 1</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                  nostrum, modi ducimus quae nisi necessitatibus adipisci vel,
+                  tenetur porro labore et rem aspernatur nulla!
+                </p>
+              </td>
+
+              <td style="color: white;">
+                <h1>Cow 2</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                  nostrum, modi ducimus quae nisi necessitatibus adipisci vel,
+                  tenetur porro labore et rem aspernatur nulla!
+                </p>
+              </td>
+
+              <td style="color: white;">
+                <h1>Cow 3</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                  nostrum, modi ducimus quae nisi necessitatibus adipisci vel,
+                  tenetur porro labore et rem aspernatur nulla!
+                </p>
+              </td>
+            </tr>
+
+            <tfoot>
+              <tr align="center" style="background: white">
+                <td>
+                  <button name="Buy_cow_1">Buy</button>
+                </td>
+
+                <td>
+                  <button name="Buy_cow_2">Buy</button>
+                </td>
+
+                <td>
+                  <button name="Buy_cow_3">Buy</button>
+                </td>
+              </tr>
+            </tfoot>
+          </tbody>
+        </table>
+      </nav>
+    </section>
+
+    <footer>
+      <section id="form">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <form action="">
+
+          <table>
+            <tr>
+              <td><label for="form_full_name">Name and surenames</label></td>
+              <td><label for="form_address">Address</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="form_full_name" id="full_name" style="background-color: orange;" required/></td>
+              <td><input type="text" name="form_address" id="form_address" style="background-color: orange;" required/></td>
+            </tr>
+
+            <tr>
+              <td><label for="form_province">Province</label></td>
+            </tr>
+
+            <tr>
+              <td>
+                <datalist id="pronvinces">
+                  <option value="Corunha"></option>
+                  <option value="Lugo"></option>
+                  <option value="Orense"></option>
+                  <option value="Pontevedra"></option>
+                </datalist>
+
+                <input list="pronvinces" name="form_province" style="background-color: orange;" required/>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Comments</td>
+            </tr>
+            
+            <tr>
+              <td colspan="2"><textarea style="background-color: orange;" name="comments" id="comments" cols="100" rows="5"></textarea></td rowspan="2">
+            </tr>
+
+          </table>
+
+          <p>
+          <label for="form_newsletter">Recibir Newsletter?</label>
+          <input type="checkbox" name="form_newsletter" id="form_newsletter" style="background-color: orange;" required/>          
+          </p>
+
+          <button>Enviar</button>
+
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
