@@ -1,17 +1,15 @@
 'use strict';
 
-//Datos de ejemplo para los items
+//Array of items with prices
 const itemNames = ['Camisa', 'Pantalon', 'Calcetines'];
 const itemPrices = [13, 27, 100];
 
 class CartItem {
   item = {};
   units = 1;
-
   constructor(item) {
     this.item = item;
   }
-
   increaseItemUnits(item) {
     item.units++;
     console.log('Unit added to item');
@@ -38,6 +36,7 @@ class User {
   constructor(name) {
     this.name = name;
   }
+  // This function adds "item" to the cart.
   addToCart(item) {
     for (let i = 0; i < this.#cart.length; i++) {
       if (this.#cart[i].item.name === item.name) {
@@ -47,6 +46,15 @@ class User {
     }
     this.#cart.push(new CartItem(item));
   }
+  // This function adds a random item (camisa, pantalon, calcetines) "amount" number of times.
+  randomAddToCart(amount){
+    for(let i = 0; i < amount; i++) {
+      let randomItem = Math.floor(Math.random()*3);
+      this.addToCart(new Item (itemNames[randomItem], itemPrices[randomItem]));
+    }
+
+  }
+  // This function sends the value of the private key "#cart#" so it can be used outside the object.
   pay() {
     return this.#cart;
   }
@@ -60,7 +68,6 @@ class Shop {
   static checkOut(user) {
     const userCart = user.pay();
     let totalAmount = [];
-    console.log(userCart);
     for (let i = 0; i < userCart.length; i++) {
       totalAmount[i] = userCart[i].item.price * userCart[i].units;
       console.log(
@@ -76,22 +83,7 @@ class Shop {
   }
 }
 
-const myCamisas = new Item(itemNames[0], itemPrices[0]);
-const myPantalones = new Item(itemNames[1], itemPrices[1]);
-const myCalcetines = new Item(itemNames[2], itemPrices[2]);
-
 const myUser = new User('Paco');
-
-myUser.addToCart(myCamisas);
-myUser.addToCart(myPantalones);
-myUser.addToCart(myCalcetines);
-myUser.addToCart(myCamisas);
-myUser.addToCart(myPantalones);
-myUser.addToCart(myCalcetines);
-myUser.addToCart(myCamisas);
-myUser.addToCart(myPantalones);
-myUser.addToCart(myCalcetines);
-
+myUser.randomAddToCart(7);
 console.log(myUser);
-
 Shop.checkOut(myUser);
