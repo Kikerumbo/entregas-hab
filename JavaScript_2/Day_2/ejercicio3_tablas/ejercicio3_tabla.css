@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+table {
+  background-color: cornflowerblue;
+}
+
+table caption {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: cornflowerblue;
+}
+
+table tr th {
+  font-weight: bolder;
+  padding: 0.5rem;
+  background-color: rebeccapurple;
+  color: gold;
+}
+
+table tr td {
+  text-align: center;
+}
